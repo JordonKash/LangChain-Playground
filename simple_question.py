@@ -9,5 +9,5 @@ api_key = os.getenv("OPENAI_API_KEY")
 chat = ChatOpenAI(openai_api_key=api_key)
 
 answer = chat.invoke("What is the population of San Fransico?")
-print(answer)
+print(answer.content)
 
